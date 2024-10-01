@@ -1,6 +1,5 @@
-import Image from "next/image";
 function f () {
-  let res = [];
+  const res = [];
   for (let i = 0; i < 100; i++){
     res.push(<div>hi {i}</div>)
   }
