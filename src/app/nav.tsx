@@ -15,7 +15,7 @@ export default function Navbar() {
     { id: 3, text: 'Contact', path: '/Contact', linkId: 30 },
   ];
   const currentPath = usePathname();
-  const isActive = (path) => { console.log(currentPath); return currentPath === path }
+  const isActive = (path: string) => { console.log(currentPath); return currentPath === path }
   const navItemClassName = 'p-3 hover:bg-[#00df9a] rounded-xl m-2 cursor-pointer duration-300 hover:text-black list-none';
   const navItemMobileClassName = 'block px-4 py-2 bg-black text-white hover:bg-[#00df9a]';
   return (
